@@ -1,5 +1,4 @@
 :root {
-  font-family: "Segoe UI";
 
   /* control lighting */
   --hard-light: #ffffff;          /* hard edge */
@@ -15,50 +14,52 @@
 
   /* control shape */
   --convex-background:
-    linear-gradient(
-      145deg,                     /* light angel */
-      var(--soft-begin),          /* light gradient start */
-      var(--soft-finish)          /* light gradient end */
-    );
+  linear-gradient(
+  145deg,                     /* light angel */
+  var(--soft-begin),          /* light gradient start */
+  var(--soft-finish)          /* light gradient end */
+  );
   --convex-control-shadow:
-    0.5rem                         /* shadow x offset */
-    0.5rem                         /* shadow y offset */
-    1.1rem                         /* shadow blur */
-    var(--shadow),                 /* shadow color */
-    -0.5rem                        /* light x offset */
-    -0.5rem                        /* light y offset */
-    1.1rem                         /* light  blur */
-    var(--hard-light);             /* light color */
+  0.5rem                         /* shadow x offset */
+  0.5rem                         /* shadow y offset */
+  1.1rem                         /* shadow blur */
+  var(--shadow),                 /* shadow color */
+  -0.5rem                        /* light x offset */
+  -0.5rem                        /* light y offset */
+  1.1rem                         /* light  blur */
+  var(--hard-light);             /* light color */
 
   --concave-background: 
-    var(--ambi-light);
+  var(--ambi-light);
   --concave-control-shadow:
-    inset
-    0.5rem                         /* shadow x offset */
-    0.5rem                         /* shadow y offset */
-    1.1rem                         /* shadow blur */
-    var(--shadow),                 /* shadow color */
-    inset 
-    -0.5rem                        /* light x offset */
-    -0.5rem                        /* light y offset */
-    1.1rem                         /* light blur */
-    var(--hard-light);             /* light color */
-    
+  inset
+  0.5rem                         /* shadow x offset */
+  0.5rem                         /* shadow y offset */
+  1.1rem                         /* shadow blur */
+  var(--shadow),                 /* shadow color */
+  inset 
+  -0.5rem                        /* light x offset */
+  -0.5rem                        /* light y offset */
+  1.1rem                         /* light blur */
+  var(--hard-light);             /* light color */
 
   --convex-text-shadow:
-    0.1rem                         /* shadow x offset */
-    0.1rem                         /* shadow y offset */
-    0.25rem                         /* shadow blur */
-    var(--shadow),                 /* shadow color */
-    -0.1rem                        /* light x offset */
-    -0.1rem                        /* light y offset */
-    0.25rem                         /* light  blur */
-    var(--hard-light);             /* light color */
+  0.1rem                         /* shadow x offset */
+  0.1rem                         /* shadow y offset */
+  0.25rem                        /* shadow blur */
+  var(--shadow),                 /* shadow color */
+  -0.1rem                        /* light x offset */
+  -0.1rem                        /* light y offset */
+  0.25rem                        /* light  blur */
+  var(--hard-light);             /* light color */
+}
+* { 
+  font-family: "Futura"; 
+  color: var(--inactive);
 }
 
 h1 {
   text-align: center;
-  color: var(--inactive);
   text-shadow: var(--convex-text-shadow);
 }
 
@@ -72,6 +73,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 #items {
   display: flex;
   justify-content: center;
@@ -80,12 +82,12 @@ body {
 
 ul li {
   list-style-type: none;
-  padding: 0.5rem;
   margin: 2rem;
 }
 
 button {
-  color: var(--inactive);
+  padding: 0.75rem;
+  font-family: "Futura";
   border-style: none;
   font-size: 1.25rem;
   text-align: center;
@@ -94,6 +96,8 @@ button {
 }
 
 button:active {
+  padding: 0.75rem;
+  font-family: "Futura";
   color: var(--active);
   border-style: none;
   font-size: 1.25rem;
@@ -112,13 +116,62 @@ button:active {
   height: 8rem;
   border-radius: 1rem;
 }
+
 .circle {
   width: 8rem;
-  height: 8rem;
+  height: 3rem;
   border-radius: 8rem;
 }
 .circle:active {
   width: 8rem;
-  height: 8rem;
+  height: 3rem;
   border-radius: 8rem;
+}
+
+textarea {
+  font-family: "Futura";
+  resize: none;
+  color: var(--inactive);
+  border-style: none;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  margin: 0;
+  max-width: 8rem;
+  max-height: 8rem;
+  text-align: left;
+  background: var(--concave-background);
+  box-shadow: var(--concave-control-shadow);
+}
+
+input[type=text] {
+  margin-top:-4px;
+  font-family: "Futura";
+  width: 8rem;
+  height: 3rem;
+  border-radius: 8rem;
+  border-style: none;
+  font-size: 1.25rem;
+  padding: 0 0 0 0.75rem;
+  text-align: left;
+  background: var(--concave-background);
+  box-shadow: var(--concave-control-shadow);
+}
+
+table {
+  padding: 0.5rem;
+  width: 18rem;
+  background: var(--concave-background);
+  box-shadow: var(--concave-control-shadow);
+}
+
+th, td, tr {
+  padding-left: 1rem;
+  text-align: left;
+}
+th[scope=col] {
+  max-width: 2rem;
+  width: 2rem;
+  padding-right: 1rem;
+  text-align: right;
 }
