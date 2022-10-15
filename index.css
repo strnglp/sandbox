@@ -4,7 +4,7 @@
   --hard-light: #ffffff;          /* hard edge */
   --soft-begin: #f0f0f0;          /* gradient start */
   --soft-finish: #cacaca;         /* gradient end */
-  --ambi-light: #e0e0e0;          /* gradient end */
+  --ambi-light: #e0e0e0;          /* ambient light */
   --shadow: #bebebe;              /* shadow beyond far edge */
 
   /* control highlights */
@@ -15,43 +15,43 @@
   /* control shape */
   --convex-background:
   linear-gradient(
-  145deg,                     /* light angel */
-  var(--soft-begin),          /* light gradient start */
-  var(--soft-finish)          /* light gradient end */
+  145deg,                         /* light angel */
+  var(--soft-begin),              /* light gradient start */
+  var(--soft-finish)              /* light gradient end */
   );
   --convex-control-shadow:
-  0.5rem                         /* shadow x offset */
-  0.5rem                         /* shadow y offset */
-  1.1rem                         /* shadow blur */
-  var(--shadow),                 /* shadow color */
-  -0.5rem                        /* light x offset */
-  -0.5rem                        /* light y offset */
-  1.1rem                         /* light  blur */
-  var(--hard-light);             /* light color */
+  0.5rem                          /* shadow x offset */
+  0.5rem                          /* shadow y offset */
+  1.1rem                          /* shadow blur */
+  var(--shadow),                  /* shadow color */
+  -0.5rem                         /* light x offset */
+  -0.5rem                         /* light y offset */
+  1.1rem                          /* light  blur */
+  var(--hard-light);              /* light color */
 
   --concave-background: 
   var(--ambi-light);
   --concave-control-shadow:
   inset
-  0.5rem                         /* shadow x offset */
-  0.5rem                         /* shadow y offset */
-  1.1rem                         /* shadow blur */
-  var(--shadow),                 /* shadow color */
+  0.5rem                          /* shadow x offset */
+  0.5rem                          /* shadow y offset */
+  1.1rem                          /* shadow blur */
+  var(--shadow),                  /* shadow color */
   inset 
-  -0.5rem                        /* light x offset */
-  -0.5rem                        /* light y offset */
-  1.1rem                         /* light blur */
-  var(--hard-light);             /* light color */
+  -0.5rem                         /* light x offset */
+  -0.5rem                         /* light y offset */
+  1.1rem                          /* light blur */
+  var(--hard-light);              /* light color */
 
   --convex-text-shadow:
-  0.1rem                         /* shadow x offset */
-  0.1rem                         /* shadow y offset */
-  0.25rem                        /* shadow blur */
-  var(--shadow),                 /* shadow color */
-  -0.1rem                        /* light x offset */
-  -0.1rem                        /* light y offset */
-  0.25rem                        /* light  blur */
-  var(--hard-light);             /* light color */
+  0.1rem                          /* shadow x offset */
+  0.1rem                          /* shadow y offset */
+  0.25rem                         /* shadow blur */
+  var(--shadow),                  /* shadow color */
+  -0.1rem                         /* light x offset */
+  -0.1rem                         /* light y offset */
+  0.25rem                         /* light  blur */
+  var(--hard-light);              /* light color */
 }
 * { 
   font-family: "Futura"; 
